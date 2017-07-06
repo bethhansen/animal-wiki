@@ -1,0 +1,13 @@
+img {
+  height: 300px;
+  width: 300px;
+}
+#gator {
+  display: none;
+}
+#trantula {
+  display: none;
+}
+#hippo {
+  display: none;
+}
