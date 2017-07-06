@@ -1,23 +1,21 @@
 $(function() {
   $("form#animals").submit(function(event) {
-    var hippo = $(".hippo").val();
-    var alligator = $(".gator").val();
-    var trantula = $(".trantula").val();
 
+var animalChoice = $("#animalchoice").val();
 
-  if (alligator) {
+  if (animalChoice === "alligator" ) { // someone chose "alligator"
     $("#gator").show();
     $("#hippo").hide();
-    $("#trantula").hide()
+    $("#tarantula").hide()
 }
-  else if (trantula) {
-    $("#trantula").show();
+  else if (animalChoice === "tarantula") { //rewrite
+    $("#tarantula").show();
     $("#hippo").hide();
     $("#gator").hide();
   }
   else {
     $("#hippo").show();
-    $("#trantula").hide();
+    $("#tarantula").hide();
     $("#gator").hide();
   }
   event.preventDefault();
